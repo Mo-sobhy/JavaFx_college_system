@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="607.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="467.0" layoutY="22.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="102.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab; -fx-font-weight: Bold;" text="Login" textFill="#fffdfd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      
+      <PasswordField layoutX="171.0" layoutY="198.0" promptText="Password" />
+      <RadioButton layoutX="202.0" layoutY="251.0" mnemonicParsing="false" style="-fx-font-weight: Bold;" text="Male" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="290.0" layoutY="251.0" mnemonicParsing="false" style="-fx-font-weight: Bold;" text="Female" textFill="#dfd5d5" toggleGroup="$gender">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="171.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="283.0" style="-fx-font-weight: Bold;" text="Sign UP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="131.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="134.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="148.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gender-fluid.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="93.0" layoutX="257.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@college.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="166.0" layoutY="145.0" promptText="First-name" />
+      <TextField layoutX="378.0" layoutY="145.0" promptText="Last-name" />
+   </children>
+</AnchorPane>

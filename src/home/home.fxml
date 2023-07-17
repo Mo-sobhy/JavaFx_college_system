@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="style_buttons" prefHeight="667.0" prefWidth="441.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="img_style" fitHeight="694.0" fitWidth="437.0" layoutX="2.0" nodeOrientation="INHERIT" opacity="0.9" pickOnBounds="true" preserveRatio="true" styleClass="img_style">
+         <image>
+            <Image url="@faculty.jpeg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="btn_doctor" layoutX="118.0" layoutY="137.0" mnemonicParsing="false" onAction="#Doctors" onMouseEntered="#entered" onMouseExited="#exit" prefHeight="52.0" prefWidth="205.0" style="-fx-background-radius: 18; -fx-background-color: orange;" text="Doctors">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_eng" layoutX="118.0" layoutY="215.0" mnemonicParsing="false" onAction="#Engineers" onMouseEntered="#entered" onMouseExited="#exit" prefHeight="52.0" prefWidth="205.0" style="-fx-background-radius: 18; -fx-background-color: orange;" text="Engineers">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_lev" layoutX="118.0" layoutY="295.0" mnemonicParsing="false" onAction="#Levels" onMouseEntered="#entered" onMouseExited="#exit" prefHeight="52.0" prefWidth="205.0" style="-fx-background-radius: 18; -fx-background-color: orange;" text="Levels">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_sub" layoutX="118.0" layoutY="371.0" mnemonicParsing="false" onAction="#Subjects" onMouseEntered="#entered" onMouseExited="#exit" prefHeight="52.0" prefWidth="205.0" style="-fx-background-radius: 18; -fx-background-color: orange;" text="Subjects">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

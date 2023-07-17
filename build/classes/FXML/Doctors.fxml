@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.DoctorsController">
+     <children>
+      <AnchorPane layoutY="45.0" prefHeight="616.0" prefWidth="206.0" style="-fx-background-color: #28252e;" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Button layoutX="34.0" layoutY="381.0" mnemonicParsing="false" onAction="#Add" onMouseEntered="#entered" onMouseExited="#exit" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: green;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <TextField fx:id="txt_doctor_id" alignment="CENTER" layoutX="8.0" layoutY="25.0" prefHeight="30.0" prefWidth="190.0" promptText="Doctor_Id" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_doctor_name" alignment="CENTER" layoutX="7.0" layoutY="67.0" prefHeight="27.0" prefWidth="190.0" promptText="Doctor_Name" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_doctor_subject" alignment="CENTER" layoutX="7.0" layoutY="110.0" prefHeight="27.0" prefWidth="190.0" promptText="Doctor_Subject" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_doctor_level_1" alignment="CENTER" layoutX="14.0" layoutY="157.0" prefHeight="27.0" prefWidth="68.0" promptText="Level-1" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_doctor_Time" alignment="CENTER" layoutX="7.0" layoutY="255.0" prefHeight="27.0" prefWidth="190.0" promptText="Place" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_doctor_Place" alignment="CENTER" layoutX="7.0" layoutY="303.0" prefHeight="27.0" prefWidth="190.0" promptText="Time" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button layoutX="36.0" layoutY="455.0" mnemonicParsing="false" onAction="#Edit" onMouseEntered="#entered" onMouseExited="#exit" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: Orange;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <Button layoutX="36.0" layoutY="526.0" mnemonicParsing="false" onAction="#Delete" onMouseEntered="#entered" onMouseExited="#exit" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: Red;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <TextField fx:id="txt_doctor_level_2" alignment="CENTER" layoutX="120.0" layoutY="157.0" prefHeight="27.0" prefWidth="68.0" promptText="Level-2" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_doctor_level_3" alignment="CENTER" layoutX="14.0" layoutY="204.0" prefHeight="27.0" prefWidth="68.0" promptText="Level-3" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_doctor_level_4" alignment="CENTER" layoutX="120.0" layoutY="204.0" prefHeight="27.0" prefWidth="68.0" promptText="Level-4" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="Table_id_Doctor" layoutX="205.0" layoutY="45.0" onMouseClicked="#getSelected" prefHeight="610.0" prefWidth="702.0">
+        <columns>
+          <TableColumn fx:id="Doctor_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Doctor_name" prefWidth="101.0" text="Doctor_Name" />
+            <TableColumn fx:id="Doctor_sub" text="Subject" />
+            <TableColumn prefWidth="223.0" text="Level">
+               <columns>
+                  <TableColumn fx:id="Doctor_Level_1" prefWidth="51.0" text="One" />
+                  <TableColumn fx:id="Doctor_Level_2" prefWidth="59.0" text="Two" />
+                  <TableColumn fx:id="Doctor_Level_3" prefWidth="69.0" text="Three" />
+                  <TableColumn fx:id="Doctor_Level_4" prefWidth="49.0" text="Four" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="Time_Id" prefWidth="104.0" text="Time" />
+            <TableColumn fx:id="Place_id" prefWidth="107.0" text="Place" />
+        </columns>
+      </TableView>
+      <Pane layoutY="-2.0" prefHeight="48.0" prefWidth="907.0" style="-fx-background-color: #28252e;">
+         <children>
+            <Button layoutX="41.0" layoutY="2.0" mnemonicParsing="false" onAction="#Back" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: #28252e;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="506.0" layoutY="6.0" prefHeight="40.0" prefWidth="104.0" style="-fx-text-fill: #0fea88;" text="Doctors">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

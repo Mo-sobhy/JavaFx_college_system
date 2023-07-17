@@ -1,0 +1,28 @@
+
+#style_buttons Button{
+    -fx-background-color: #d3cbcb;
+    -fx-text-fill: black;
+    -fx-background-radius: 20px;
+    font-family: SansSerif;
+    font-size: 27px;
+    font-weight: bold;
+    font-style: italic;
+     
+}
+ #AnchorPane {
+    -fx-background-color: #2D3447;
+}
+#AnchorPane Button {
+    
+   
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+    font-family: SansSerif;
+    font-size: 27px;
+    font-weight: bold;
+    font-style: italic;    
+    
+}
+#AnchorPane  btn_name_doctor_add{
+   color: blue;
+}
